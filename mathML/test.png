@@ -1,0 +1,17 @@
+<math display = 'block'>
+  <mrow>
+    <mfrac>
+      <mrow>
+        <msup>
+          <mi>b</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>&minus;</mo>
+        <mn>4</mn>
+        <mo fontfamily='Times New Roman' lspace='0px' rspace='0px'>&lowast;</mo>
+        <mi>ac</mi>
+      </mrow>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math>
