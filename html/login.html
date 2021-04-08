@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MEGa</title>
+    <link rel="shortcut icon" type="image/png" href="img/MEGa.svg">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                     <li><a href="#"><i class="fas fa-info"></i> About</a></li>
+                     <li><a href="#"><i class="fas fa-question"></i> Quiz</a></li>
+                     <li><a href="#"><i class="fas fa-graduation-cap"></i> Explore</a>
+                        <div class="drop-down1">
+                            <ul>
+                                <li><a href="algebra.html">Algebra</a></li>
+                                <li><a href="#">Geometry</a></li>
+                                <li><a href="#">Trigonometry</a></li>
+                                <li><a href="#">Calculus</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                     <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>           
+                </ul>
+            </nav>
+       </div>
+    </div>
+<h2>In order to access many of our features, you might considering creating an account!</h2>
+<div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <form id="LogIn" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Passowrd</span>
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    <form id="Register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="E-mail" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+</div>
+
+<script>
+    var x=document.getElementById("LogIn");
+    var y=document.getElementById("Register");
+    var z=document.getElementById("btn");
+
+    function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="50px";
+    }
+    function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+    }
+</script>
+
+</body>
+
+</html>

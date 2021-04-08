@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #9594dd, #9695e1, #9695e4, #9796e8, #9896eb, #a695ea, #b495e8, #c094e5, #d793db, #e993cf, #f695c2, #ff99b6);
+
+}
 
 .navbar{
     display: block;
