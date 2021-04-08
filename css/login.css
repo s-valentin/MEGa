@@ -112,7 +112,7 @@ nav ul li a{
     cursor: pointer;
     display:block;
     margin:auto;
-    background:linear-gradient(to left, #03a9fa,#ff0058); 
+    background:radial-gradient(circle, #d5aeff, #c793ff, #b877ff, #a85aff, #9737ff);
     border:0;
     outline:none;
     border-radius: 30px;
