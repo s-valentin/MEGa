@@ -59,6 +59,28 @@ body{
     right: 0;
 
     margin:auto;
+
+    animation: logoBreath 4s infinite;
+}
+
+@keyframes logoBreath{
+    0%{
+
+        -webkit-animation: scale(0.9);
+        transform: scale(0.9);
+    }
+    25%{
+        -webkit-animation: scale(1);
+        transform: scale(1);
+    }
+    60%{
+        -webkit-animation: scale(0.9);
+        transform: scale(0.9);
+    }
+    100%{
+        -webkit-animation: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
 .megaLogo ul{
