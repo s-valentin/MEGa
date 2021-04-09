@@ -13,7 +13,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
     <script
@@ -23,8 +23,6 @@
   </head>
 
   <body>
-
-
     <div class="navbar">
       <a href="index.html"
         ><img class="home" src="../resources/svg/calculator.svg" alt="Home"
@@ -69,6 +67,28 @@
     </div>
     <script src="../js/slideLogo.js"></script>
 
-    <div class="canvas" id="canvas">canvas</div>
+    <div class="canvas" id="canvas">
+      <div id="middleLine"></div>
+
+      <div id="topBar">
+        <p id="leftTopText">Question: #69</p>
+
+        <div class="star-wrapper" id="star-wrapper">
+          <a href="#" class="fas fa-star s1"></a>
+          <a href="#" class="fas fa-star s2"></a>
+          <a href="#" class="fas fa-star s3"></a>
+          <a href="#" class="fas fa-star s4"></a>
+          <a href="#" class="fas fa-star s5"></a>
+          <div class="tooltipRating">
+            <span class="tooltipTextRating">4.20</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottomBar">
+        <p id="leftBottomText">Submitted by: user_id (category_name)</p>
+        <p id="rightBottomText">(easy)</p>
+      </div>
+    </div>
   </body>
 </html>
