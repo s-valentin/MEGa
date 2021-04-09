@@ -15,13 +15,14 @@ body{
 
 .navbar{
     display: block;
-    height:81px;
+    width: 100px;
+    height:100px;
     background-color: none;
 }
 
 .home{
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 25%;
+    margin-top: 25%;
     width:50px;
     height:50px;
     filter:grayscale(100%);
@@ -33,8 +34,50 @@ body{
     transform: scale(1.1);
 }
 
-.gradient{
-    height: 100%;
-    background-color: #C2E5F2;
-    background-size: 100% 100%;
+
+.logo{
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
+
+.megaLogo{
+    margin-left: 0;
+    margin-top: 0;
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    transition: 0.3s ease-in-out;
+
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin:auto;
+}
+
+.megaLogo ul{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.megaLogo ul li{
+    display: inline-block;
+    width: 50;
+    height: 50px;
+    padding: 0px;
+}
+
+.user{
+    font-size: larger;
+    font-family:'Raleway', sans-serif;
+}
+
