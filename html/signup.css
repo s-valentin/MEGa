@@ -19,7 +19,7 @@
 
 .login{
     margin-left:10%;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .box{
@@ -59,7 +59,6 @@ input{
     padding:10px;
     background:transparent;
     border:none;
-    outline:none;
     color:white;
 }
 
