@@ -53,6 +53,8 @@ p{
     font-size: 25px;
 }
 
+
+
 .container{
     height:100vh;
     width:100%;
@@ -84,7 +86,7 @@ nav ul li{
     
    width:120px;
    margin:15px;
-    padding:10px;
+   padding:15px;
 }
 
 nav ul li a{
@@ -108,7 +110,6 @@ nav ul li:hover .drop-down1{
     background-color:rgb(149, 148, 221);
     margin-top:15px;
     margin-left:-15px;
-    
 }
 
 nav ul li:hover .drop-down1 ul{
@@ -118,6 +119,7 @@ nav ul li:hover .drop-down1 ul{
 
 nav ul li:hover .drop-down1 ul li{
     width:150px;
+    padding:10px;
     border-bottom:1px dotted #fff;
     background:transparent;
     border-radius:0;
@@ -126,7 +128,6 @@ nav ul li:hover .drop-down1 ul li{
 
 nav ul li:hover .drop-down1 ul li:last-child{
     border-bottom:none;
-    overflow:hidden;
 }
 
 nav ul li:hover .drop-down1 ul li a:hover{
