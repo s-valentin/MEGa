@@ -17,7 +17,7 @@ body{
     display: block;
     width: 100px;
     height:100px;
-    background-color: none;
+    background-color: transparent;
 }
 
 .home{
@@ -71,19 +71,15 @@ body{
 @keyframes logoBreath{
     0%{
 
-        -webkit-animation: scale(0.9);
         transform: scale(0.9);
     }
     25%{
-        -webkit-animation: scale(1);
         transform: scale(1);
     }
     60%{
-        -webkit-animation: scale(0.9);
         transform: scale(0.9);
     }
     100%{
-        -webkit-animation: scale(0.9);
         transform: scale(0.9);
     }
 }
@@ -98,7 +94,7 @@ body{
 
 .megaLogo ul li{
     display: inline-block;
-    width: 70;
+    width: 70px;
     height: 70px;
     padding: 0px;
 }
