@@ -16,9 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-    ></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
 
   <body>
@@ -88,8 +86,38 @@
         </div>
       </div>
 
+      <div id="equation">
+        <math display="block">
+          <mrow>
+            <msup>
+              <mfenced>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>+</mo>
+                  <mi>b</mi>
+                </mrow>
+              </mfenced>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </math>
+      </div>
+
+      <div class="answerButtons" id="answerButtons">
+        <button>Answer 1</button>
+        <button>Answer 2</button>
+        <button>Answer 3</button>
+        <button>Answer 4</button>
+      </div>
+
+      <div class="controlButtons" id="controlButtons">
+        <button>Previous</button>
+        <button>Random</button>
+        <button>Next</button>
+      </div>
+
       <div id="bottomBar">
-        <p id="leftBottomText">Submitted by: user_id (category_name)</p>
+        <p id="leftBottomText">(category_name)</p>
         <p id="rightBottomText">(easy)</p>
       </div>
     </div>

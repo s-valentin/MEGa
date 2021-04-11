@@ -104,3 +104,52 @@ body{
     font-family:'Raleway', sans-serif;
 }
 
+@media only screen and (max-width: 600px){
+    .logo{
+        height: 30px;
+        width: 30px;
+    }
+
+    .megaLogo ul{
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    }
+    
+    .megaLogo ul li{
+        width: 30px;
+        height: 30px;
+    }
+
+    #slideLogo{
+        width: 120px;
+        height: 30px;
+    }
+
+    .home{
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-height: 700px){
+
+    .logo{
+        height: 30px;
+        width: 30px;
+    }
+
+    .megaLogo ul{
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    }
+    
+    .megaLogo ul li{
+        width: 30px;
+        height: 30px;
+    }
+
+    #slideLogo{
+        width: 120px;
+        height: 30px;
+    }
+}

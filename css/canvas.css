@@ -67,8 +67,10 @@ p {
 
 #leftTopText {
   display: flex;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
   height: 100%;
-  font-size: 40px;
+  font-size: 230%;
 }
 
 .star-wrapper {
@@ -107,7 +109,7 @@ p {
 .wraper {
   position: absolute;
   bottom: 30px;
-  right: 50px;
+  right: 3%;
 }
 
 .tooltipRating {
@@ -132,3 +134,145 @@ p {
 .tooltipRating:hover .tooltiptextRating {
   visibility: visible;
 }
+
+
+#equation{
+  position: relative;
+  float: left;
+  height: 35%;
+  width: 45%;
+
+  top: 50%;
+  left: 2%;
+}
+
+.answerButtons{
+  position: absolute;
+  height: 70%;
+  width: 40%;
+
+  top: 20%;
+  right: 5%;
+  float: right;
+}
+
+.answerButtons button{
+  display: block;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(144, 220, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  border-radius: 7px;
+  
+}
+
+.answerButtons button:hover {
+  background-color: #6e6e6e;
+  color: white;
+}
+
+.controlButtons{
+  position: absolute;
+  height: 10%;
+  width: 40%;
+
+  bottom: 3%;
+  right: 5%;
+  float: right;
+}
+
+.controlButtons button{
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(133, 133, 133, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 7px;
+
+  z-index: 1;
+}
+
+.controlButtons button:hover{
+  background-color: rgba(20, 20, 20, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+@media only screen and (max-width: 1200px){
+    #leftTopText{
+      display: flex;
+      margin-left: 0.5%;
+      margin-top: 0.5%;
+      height: 100%;
+      font-size: 100%;
+    }
+
+    #leftBottomText {
+      display: inline;
+      font-size: 70%;
+    }
+    
+    #rightBottomText {
+      float: right;
+      font-size: 70%;
+    }
+
+    .star-wrapper {
+      top: 50%;
+      right: -10%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      direction: rtl;
+    }
+
+    .star-wrapper a {
+      font-size: 100%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s;
+      margin: 0px;
+    }
+}
+
+@media only screen and (max-height: 700px){
+  #leftTopText{
+    display: flex;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    height: 100%;
+    font-size: 100%;
+  }
+    
+  #rightBottomText {
+    float: right;
+    font-size: 70%;
+  }
+
+  #leftBottomText {
+    font-size: 75%;
+  }
+
+
+  .star-wrapper {
+    top: 50%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    direction: rtl;
+  }
+
+  .star-wrapper a {
+    font-size: 100%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin: 0px;
+  }
+
+  
+  }
