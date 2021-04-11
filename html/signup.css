@@ -62,7 +62,7 @@ input{
     color:white;
 }
 
-.username, .password{
+.username, .password,.email{
     border-bottom: 1px solid white;
 }
 
