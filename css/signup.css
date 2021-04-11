@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
     text-decoration: none;
-    font-family: Century Gothic;
+    font-family: "Century Gothic";
 }
 
 .background{
@@ -19,7 +19,6 @@
 
 .login{
     margin-left:10%;
-    font-weight: 300px;
 }
 
 .box{
