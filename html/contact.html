@@ -22,21 +22,61 @@
         <form>
             <div class="row">
                 <div class="column">
-                    <label class="labels" for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname">
+                    <label for="fname">First name</label><br>
+                    <input class="fname" type="text" id="fname" name="fname">
                 </div>
 
                 <div class="column">
-                    <label class="labels" for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname">
+                    <label for="lname">Last name</label><br>
+                    <input class="lname" type="text" id="lname" name="lname">
+                </div>
+        
+                <div class="column">
+                    <label class="label" for="email">Email</label><br>
+                    <input class="email" type="text" id="email" name="email">
                 </div>
             </div>
-            
-            <div class="complaint">
-                <label class="labels" for="complaint">What went wrong:</label><br>
-                <input class="input" type="text" id="complaint" name="complaint">
+
+            <div class="feedback">
+                <label class="label" for="feedback">Your feedback</label><br>
+                <textarea class="feedbackText" id="feedback" name="feedback" placeholder="You didn't like this... Or did you?"></textarea>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="button" value="Submit feedback">
             </div>
         </form>
+    </div>
+
+    <div class="bottom">
+        <div class="bottomRow">
+            <div class="bottomColumn">
+                <img class="profile" src="../resources/profile/woman1.png" alt="Cosmin">
+                <p>Sandu Marius-Cosmin 
+                    <br> Email: sandu_cosmin9@yahoo.com
+                    <br> Github: <a href="https://github.com/sanducosmin9">sanducosmin9</a>
+                </p>
+            </div>
+
+            <div class="bottomColumn">
+                <img class="profile" src="../resources/profile/woman2.png" alt="Andu">
+                <p>Sîrcu Cătălin Alexandru 
+                    <br> Email: acs200035@gmail.com
+                    <br> Github: <a href="https://github.com/catalin-alexandru-s">catalin-alexandru-s</a>
+                </p>
+            </div>
+
+            <div class="bottomColumn">
+                <img class="profile" src="../resources/profile/zcat.png" alt="Vali">
+                <p>Stanciu Valentin
+                    <br> Email: stanciuvalentin7@gmail.com
+                    <br> Github: <a href="https://github.com/s-valentin">s-valentin</a>
+                </p>
+                
+            </div>
+        </div>
+
+
     </div>
 </body>
 </html>
