@@ -23,7 +23,7 @@
     <div class = "user">
         <div class="avatar">
             <?php
-                $imageNumber = rand(1,20) : int;
+                $imageNumber = rand(1,20);
                 echo '<img class="avatarSVG" src="../resources/userAvatars/avatar('.$imageNumber.').svg" alt="avatar">'
             ?>
             
