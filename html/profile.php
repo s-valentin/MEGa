@@ -16,21 +16,25 @@
 </head>
 <body>
     <div class = "navbar">
-        <a href="index.html"
+        <a href="index.php"
         ><img class="home" src="../resources/svg/calculator.svg" alt="Home"
       /></a>
     </div>
     <div class = "user">
         <div class="avatar">
             <?php
-                $imageNumber = rand(1,20);
+                include '../php/queryAvatar.php';
+
+                $imageNumber = $row["avatar_number"];
                 echo '<img class="avatarSVG" src="../resources/userAvatars/avatar('.$imageNumber.').svg" alt="avatar">'
             ?>
             
             
         </div>
         <p class = "username">
-            User Name
+            <?php
+                echo $row["username"];
+            ?>
         </p>
     </div>
 
