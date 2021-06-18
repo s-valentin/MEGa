@@ -3,7 +3,7 @@
     $conn = OpenCon();
     // echo "Connected Successfully". "<br>";
 
-    $sql = "SELECT * FROM avatar WHERE username = 'vali'";
+    $sql = "SELECT * FROM avatar WHERE username = 'cosmin'";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
     // if ($result->num_rows > 0) {
