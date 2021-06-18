@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +20,20 @@
                 <h1>Log In</h1>
                 <p>No account? Press <a href="signup.php">Sign Up</a> to become a member!</p>
                 <p>Proceed to the <a href="index.php"> Home</a> page!</p>
-                <p>Forgot the password? Click<a href="#"> here.</a></p>
+                <p>Forgot the password? Click<a href="../html/forgotpassword.php"> here.</a></p>
             </div>
             <div class="box">
-                <form class="form">
-                    <input type="text" class="username" placeholder="Username" required>
-                    <input type="password" class="password" placeholder="Password" required>
-                    <input type="submit" class="button" value="Login">
+                <form class="form" action="../includes/login.inc.php" method="post">
+                    <input type="text" name="usersname" class="Username" placeholder="Username" required>
+                    <input type="password" name="password" class="Password" placeholder="Password" required>
+                    <input type="submit" name="submit" class="button" value="Login">
+                    <?php
+            if(isset($_GET["error"])){
+                if($_GET["error"]=="wrongLogin"){
+                    echo "<p>Incorrect login info!</p>";
+                }
+            }
+        ?>
                 </form>
             </div>
 

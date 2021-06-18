@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +24,16 @@
 
 
     <div class="formular">
-        <form>
+        <form action="../includes/contact.inc.php" method="POST">
             <div class="row">
                 <div class="column">
-                    <label for="fname">First name</label><br>
+                    <label for="fname">Name</label><br>
                     <input class="fname" type="text" id="fname" name="fname">
                 </div>
 
                 <div class="column">
-                    <label for="lname">Last name</label><br>
-                    <input class="lname" type="text" id="lname" name="lname">
+                    <label for="subj">Subject</label><br>
+                    <input class="subj" type="text" id="subj" name="subj">
                 </div>
         
                 <div class="column">

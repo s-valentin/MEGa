@@ -1,6 +1,6 @@
     <?php
     include 'connection.php';
-    $conn = OpenCon();
+    #$conn = OpenCon();
     // echo "Connected Successfully". "<br>";
 
     $sql = "SELECT * FROM avatar WHERE username = 'cosmin'";
@@ -15,5 +15,5 @@
     //     echo "0 results";
     //   }
 
-    CloseCon($conn);
+   # CloseCon($conn);
     ?>
