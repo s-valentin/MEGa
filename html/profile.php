@@ -29,7 +29,7 @@
             <?php
                 include '../php/queryAvatar.php';
 
-                $imageNumber = $row["avatar_number"];
+                $imageNumber = $row["id"];
                 echo '<img class="avatarSVG" src="../resources/userAvatars/avatar('.$imageNumber.').svg" alt="avatar">'
             ?>
 
@@ -37,7 +37,7 @@
         </div>
         <p class="username">
             <?php
-                echo $row["username"];
+                echo $row["usersName"];
             ?>
         </p>
     </div>
@@ -46,57 +46,50 @@
         <div class="square">
             <div class="eq">
                 <math display="block">
-                    <mstyle scriptlevel="-2">
-                        <mrow>
-                            <mi>cos</mi>
-                            <mo>&#8289;</mo>
-                            <mo>(</mo>
-                            <msup>
-                                <mi>x</mi>
-                                <mn>3</mn>
-                            </msup>
-                            <mo>)</mo>
-                            <msup>
-                                <mfenced>
+                    <mstyle scriptlevel="-1">
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                    <msup>
+                                        <mrow>
+                                            <mo>(</mo>
+                                            <mrow>
+                                                <mi>x</mi>
+                                                <mo>+</mo>
+                                                <mn>2</mn>
+                                            </mrow>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
                                     <mrow>
-                                        <mi>a</mi>
-                                        <mo>+</mo>
-                                        <mi>b</mi>
+                                        <mrow>
+                                            <mi>sin</mi>
+                                            <mo>&#8289;</mo>
+                                            <mo>(</mo>
+                                            <mi>x</mi>
+                                            <mo>)</mo>
+                                        </mrow>
+                                        <mo>&#8290;</mo>
+                                        <mrow>
+                                            <mi>cos</mi>
+                                            <mo>&#8289;</mo>
+                                            <mo>(</mo>
+                                            <mrow>
+                                                <mi>x</mi>
+                                                <mo>-</mo>
+                                                <mn>2</mn>
+                                            </mrow>
+                                            <mo>)</mo>
+                                        </mrow>
                                     </mrow>
-                                </mfenced>
-                                <mn>2</mn>
-                            </msup>
-                            <msup>
-                                <mfenced>
-                                    <mrow>
-                                        <mi>a</mi>
-                                        <mo>+</mo>
-                                        <mi>b</mi>
-                                    </mrow>
-                                </mfenced>
-                                <mn>2</mn>
-                            </msup>
-                            <msup>
-                                <mfenced>
-                                    <mrow>
-                                        <mi>a</mi>
-                                        <mo>+</mo>
-                                        <mi>b</mi>
-                                    </mrow>
-                                </mfenced>
-                                <mn>2</mn>
-                            </msup>
-                            <msup>
-                                <mfenced>
-                                    <mrow>
-                                        <mi>a</mi>
-                                        <mo>+</mo>
-                                        <mi>b</mi>
-                                    </mrow>
-                                </mfenced>
-                                <mn>2</mn>
-                            </msup>
-                        </mrow>
+                                </mrow>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
                     </mstyle>
                 </math>
             </div>
@@ -115,7 +108,7 @@
         <div class="square">
             <div class="eq">
                 <math display="block">
-                    <mstyle scriptlevel="-2">
+                    <mstyle scriptlevel="-1">
                         <mrow>
                             <mrow>
                                 <mi>lim</mi>

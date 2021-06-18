@@ -1,9 +1,9 @@
     <?php
     include 'connection.php';
-    #$conn = OpenCon();
+    $conn = OpenCon();
     // echo "Connected Successfully". "<br>";
 
-    $sql = "SELECT * FROM avatar WHERE username = 'cosmin'";
+    $sql = "SELECT * FROM user WHERE usersName = 'vali'";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
     // if ($result->num_rows > 0) {

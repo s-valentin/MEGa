@@ -95,22 +95,6 @@ body{
     margin: 1px solid #2d2d2d;
 }
 
-.eq{
-    height: 100px;
-    width: 100px;
-    font-size: 1.5em;
-}
-
-.MathJax_Display{
-    font-size: 1.5em;
-    height: 100%;
-}
-
-.MathJax{
-    font-size: 1.5em;
-    height: 100%;
-}
-
 .statText{
     display: flex;
     position: relative;
