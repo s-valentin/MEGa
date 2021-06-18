@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +21,6 @@
                  <ul>
                      <li class="active"><a href="index.php"><i class="fas fa-home"></i> Home</a></li>
                      <li><a href="about.php"><i class="fas fa-info"></i> About</a></li>
-                     <li><a href="quiz.php"><i class="fas fa-question"></i> Quiz</a></li>
                      <li><a href="#"><i class="fas fa-graduation-cap"></i> Explore</a>
                         <div class="drop-down1">
                             <ul>
@@ -29,8 +32,17 @@
                         </div>
                     </li>
                      <li><a href="contact.php"><i class="fas fa-phone-alt"></i> Contact</a></li>
-                     <li><a href="login.php"><i class="fas fa-sign-in-alt"></i> Log In</a></li>  
-                     <li><a href="profile.php"><i class="fas fa-profile-alt"></i> Profile </a></li>                     
+                     <?php
+                     if(isset($_SESSION["userName"])){
+                         echo "<li><a href='quiz.php'><i class='fas fa-question'></i> Quiz</a></li>";
+                         echo "<li><a href='profile.php'><i class='fas fas fa-edit'></i> Post Exercise </a></li>";
+                         echo "<li><a href='../includes/logout.inc.php'><i class='fas fa-sign-in-alt'></i> Log out</a></li>";
+                     }
+                     else{
+                         echo"<li><a href='login.php'><i class='fas fa-sign-in-alt'></i> Log In</a></li>";
+                     }
+                     ?>
+                                          
                  </ul>
              </nav>
         </div>

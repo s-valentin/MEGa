@@ -62,7 +62,7 @@ input{
     color:white;
 }
 
-.username, .password,.email{
+.username, .password, .email, .rptpassword{
     border-bottom: 1px solid white;
 }
 

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,13 +79,9 @@
         <p id="leftTopText">Question: #69</p>
 
         <div class="star-wrapper" id="star-wrapper">
-          <a href="#" class="fas fa-star s1"></a>
-          <a href="#" class="fas fa-star s2"></a>
-          <a href="#" class="fas fa-star s3"></a>
-          <a href="#" class="fas fa-star s4"></a>
-          <a href="#" class="fas fa-star s5"></a>
+         
           <div class="tooltipRating">
-            <span class="tooltipTextRating">4.20</span>
+            
           </div>
         </div>
       </div>
@@ -111,14 +111,11 @@
       </div>
 
       <div class="controlButtons" id="controlButtons">
-        <button>Previous</button>
-        <button>Random</button>
-        <button>Next</button>
+       
       </div>
 
       <div id="bottomBar">
-        <p id="leftBottomText">(category_name)</p>
-        <p id="rightBottomText">(easy)</p>
+        
       </div>
     </div>
   </body>
