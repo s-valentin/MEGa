@@ -8,7 +8,7 @@ if(isset($_POST["submit"]))
     $password=$_POST["password"];
     $rptpassword=$_POST["rptpassword"];
 
-    require_once '../includes/db.php';
+    require_once '../includes/connection.php';
     require_once '../includes/functions.php';
 
 
